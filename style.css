@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 110vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -22,7 +22,7 @@ body {
 
 @media only screen and (max-width: 700px) {
   body {
-    min-height: 600px;
+    min-height: 800px;
   }
 }
 
@@ -1395,12 +1395,8 @@ body {
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px rgba(80, 220, 200, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   max-width: 600px;
   height: 300px;
@@ -1408,22 +1404,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.5s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear;
 }
 
 .title {
   font-size: 2rem;
   color: #fff;
-  font-family: Verdana, sans-serif;
-  font-weight: 25px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
   text-align: center;
-  text-shadow: 0 0 25px rgba(80, 220, 200, 0.5);
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.75);
+  font-weight: 800;
   position: absolute;
-  top: 10px;
+  top: 25%;
   left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 2rem;
-  transition: opacity 0.5s linear;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s linear, top 0.25s linear;
 }
 
 .button-container {
@@ -1436,15 +1431,15 @@ body {
   left: 50%;
   bottom: 10px;
   transform: translate(-50%, 0%);
+  transition: opacity 0.25s linear;
 }
 
 .button {
   border-radius: 10px;
-  border-style: outset;
-  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   font-size: 2rem;
   color: #fff;
-  font-family: Verdana, sans-serif;
+  font-family: Brush Script MT, Brush Script Std, cursive;
   font-weight: 25px;
   text-align: center;
   padding: 10px 40px;
@@ -1454,22 +1449,14 @@ body {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%, -50%);
-  transition: transform 0.5s linear, box-shadow 0.5s linear,
-    text-shadow 0.5s linear;
+  transition: transform 0.25s linear, box-shadow 0.25s linear,
+    text-shadow 0.25s linear;
 }
 
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(80, 220, 200, 0.5);
-  text-shadow: 0 0 20px rgba(80, 220, 200, 0.5);
-}
-
-.left:hover {
-  background-color: rgba(80, 220, 200, 0.3);
-}
-
-.right:hover {
-  background-color: rgba(80, 220, 200, 0.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.75);
 }
 
 @media only screen and (max-width: 700px) {
@@ -1478,7 +1465,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     width: 80%;
-    height: 300px;
+    height: 250px;
     position: absolute;
     left: 50%;
     top: 5%;
