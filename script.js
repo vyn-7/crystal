@@ -8,11 +8,10 @@ let index = 0;
 let title = [
   "🤍🤍🤍",
   "From: Ervane<br>To: Crystal",
-  "Hello po, miss na kita",
-  "Sorry kung tagal natapos",
-  "Crush baya kita hehe",
-  "Turn on mo volume mo",
-  "I hope you like this gift",
+  "Hello love!",
+  "I have gift for you!",
+  "I hope you'll love it.",
+  "Turn on your volume please",
   "🤍🤍🤍",
 ];
 
